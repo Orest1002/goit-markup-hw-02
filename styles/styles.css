@@ -3,6 +3,9 @@
     --secondary-font:'Raleway',sans-serif;
     --primari-text-color:#2E2F42;
     --secondary-text-color:#434455;
+    --primary-brend-color: #4D5AE5;
+    --light-text-color: #F4F4FD;
+    --accent-text-color:#E7E9FC;
 }
 .list {list-style: none;}
 .link {text-decoration: none;}
@@ -13,12 +16,12 @@ body
 
 .logo-web:hover,
 .logo-web:focus{
-    color: #4D5AE5;;
+    color:var(--primary-brend-color)
 }
 
 
 .menu-link{
-font-weight: 600;
+font-weight: 500;
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
@@ -26,7 +29,11 @@ color: var(--primari-text-color);
 }
 .menu-link:hover,
 .menu-link:focus{
-    color: #4D5AE5;
+    color: (--secondary-text-color);
+}
+
+.menu-link:active{
+    color: var(--primary-brend-color)
 }
 .contact-mail {
   font-size: 16px;
@@ -36,7 +43,7 @@ color: var(--secondary-text-color);
 }
 .contact-mail:hover,
 .contact-mail:focus{ 
-    color: #4D5AE5;}
+    color: var(--primary-brend-color);}
 .contact-tel{
     font-size: 16px;
     line-height: 1.5;
@@ -44,7 +51,8 @@ color: var(--secondary-text-color);
     color: var(--secondary-text-color);
 }
 .contact-tel:hover,
-.contact-tel:focus{color: #4D5AE5;}
+.contact-tel:focus{color: var(--primary-brend-color)
+}
 .logo{
     font-family: var(-secondary-font);
 font-weight: 800;
@@ -62,41 +70,46 @@ font-size: 18px;
 line-height: 1.17;
 letter-spacing: 0.03em;
 text-transform: uppercase;
-    color: #4D5AE5;
-    text-transform: uppercase;
+    color: var(--primary-brend-color);
+    
 }
 /*============ hero ===========*/
-
+.hero{
+    background: #2E2F42;
+}
 .main-title{
-    font-weight: 600;
+    font-weight: 500;
     font-size: 56px;
     line-height: 1.07;  
     letter-spacing: 0.02em;
-    background: #2E2F42;
-    color: #FFFFFF;}
+       color: #FFFFFF;}
 .modal-btn{
-    font-weight: 600;
+    font-family: inherit;
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
     display: flex;
       letter-spacing: 0.04em;
     color: #FFFFFF;
-background: #4D5AE5;}
+background: #4D5AE5;
+cursor: pointer;
+}
 .modal-btn:hover,
 .modal-btn:focus
 {background-color: #404BBF;
-    color: #FFFFFF;
-cursor: pointer;}
+    color: #FFFFFF;}
+    .modal-btn:active{
+        background-color: #404BBF}
 
 
 
 /* ----section2---- */
 .service-title{
-font-weight: 600;
+font-weight: 500;
 font-size: 20px;
 line-height: 1.2;
 letter-spacing: 0.02em;
-color:#2E2F42 ;
+color:var(--primari-text-color) ;
 }
 .servis-text{
 font-size: 16px;
@@ -105,15 +118,18 @@ letter-spacing: 0.02em;
 color: var(--secondary-text-color);
 }
 .about{
-    font-weight: 600;
+    font-weight: 500;
 font-size: 36px;
 line-height: 1.1;
 letter-spacing: 0.02em;
 text-transform: capitalize;
 color: var(--primari-text-color);
 }
+.section-team{
+background: #F4F4FD;
+}
 .about-title{
-font-weight: 600;
+font-weight: 500;
 font-size: 20px;
 line-height: 1.2;
 letter-spacing: 0.02em;
@@ -129,18 +145,19 @@ color: var(--secondary-text-color);}
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
-color: #E7E9FC;
+color:var(--accent-text-color);
 }
 .page-footer{
     background: #2E2F42;
 }
 /* page portfolio */
 .list-btn{
-    font-weight: 600;
+    font-family: inherit;
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     display: flex;
-    color: #4D5AE5;
+    color: var(--primary-brend-color);
     background: #F4F4FD;
     }
 .list-btn:hover,
@@ -156,7 +173,7 @@ font-size: 18px;
 line-height: 1.17;
 letter-spacing: 0.03em;
 text-transform: uppercase;
-color: #2E2F42;
+color: var(--primari-text-color);
 }
 .footer-portfolio{
     background: #2E2F42;}
@@ -167,20 +184,20 @@ color: #2E2F42;
         line-height: 1.17;      
         letter-spacing: 0.03em;
         text-transform: uppercase;            
-        color: #F4F4FD;}
+        color: var(--light-text-color)}
 
         .portfolio-about-title{
-             font-weight: 600;
+             font-weight: 500;
             font-size: 20px;
             line-height:1.2;
             letter-spacing: 0.02em;
-            color: #2E2F42;
+            color: var(--primari-text-color);
         }
         .portfolio-about-text{
             font-size: 16px;
             line-height: 1.5;
             letter-spacing: 0.02em;
-            color: #434455;
+            color: var(--secondary-text-color);
         }
 
 
